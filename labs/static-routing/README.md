@@ -37,3 +37,71 @@ PC-A → SW1 → R1 → R2 → SW2 → PC-B
   `192.168.20.1 /24`
 
 ### PC-A:
+
+IP: 192.168.10.10
+Mask: 255.255.255.0
+Gateway: 192.168.10.1
+
+### PC-B:
+
+IP: 192.168.20.10
+Mask: 255.255.255.0
+Gateway: 192.168.20.1
+---
+
+## Router Configuration
+
+### R1
+
+enable
+configure terminal
+
+interface g0/0
+ip address 192.168.10.1 255.255.255.0
+no shutdown
+exit
+
+interface g0/1
+ip address 10.0.0.1 255.255.255.252
+no shutdown
+exit
+
+### R2
+
+enable
+configure terminal
+
+interface g0/0
+ip address 10.0.0.2 255.255.255.252
+no shutdown
+exit
+
+interface g0/1
+ip address 192.168.20.1 255.255.255.0
+no shutdown
+exit
+
+## Static Routes
+
+### On R1:
+ip route 192.168.20.0 255.255.255.0 10.0.0.2
+
+### On R2:
+ip route 192.168.10.0 255.255.255.0 10.0.0.1
+
+## Verification Steps
+
+From **PC-A**:
+ping 192.168.20.10
+
+css
+Copy code
+
+From **PC-B**:
+ping 192.168.10.10
+
+yaml
+Copy code
+
+Expected: Successful replies from both PCs.
+
