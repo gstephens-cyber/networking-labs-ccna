@@ -1,111 +1,110 @@
 # 📘 Advanced Networking Labs
 
-A collection of advanced, enterprise-grade networking and security labs built with Cisco Packet Tracer and Cisco IOS.  
-These labs go far beyond introductory routing and ACL tasks — each project demonstrates the ability to design, secure, and operate complex multi-layer networks.
-
-This section is intended to showcase skills used in professional environments such as:
+A collection of advanced, enterprise-grade networking and security labs built using Cisco Packet Tracer and Cisco IOS.  
+These labs extend beyond basic routing and ACL tasks — each project demonstrates real-world network design skills used in:
 
 - Cybersecurity Analyst / SOC roles  
 - Canadian Armed Forces Cyber Operator  
 - Network Security Engineering  
-- Infrastructure / NetOps positions  
+- Infrastructure / NetOps  
 
 These are **not** student-level labs.  
-Each design models real-world architectures using multiple routers, switches, VLANs, DMZs, VPN tunnels, and layered security controls.
+Each one reflects multi-device, multi-layer, security-focused architectures with DMZs, VLANs, VPNs, and advanced routing.
 
 ---
 
 ## 🔥 What These Labs Demonstrate
 
-Each advanced lab is designed to prove hands-on capability in:
+Each advanced lab is designed to showcase:
 
 - Enterprise network segmentation  
-- Perimeter security and DMZ design  
+- Perimeter security & DMZ architecture  
 - Layer-3 switching  
 - Multi-area OSPF routing  
 - IPSec site-to-site VPN tunnels  
 - Firewall-style extended ACL logic  
 - High availability (HSRP)  
-- SPAN/IDS monitoring & packet analysis  
-- Multi-router, multi-switch enterprise topologies  
+- SPAN/IDS traffic monitoring  
+- Multi-router, multi-switch network topologies  
 
-All labs include:
+---
+
+### 🧰 Included in Every Lab
 
 - Topology diagrams  
-- Device/module requirements  
+- Required devices/modules  
 - IP addressing plans  
 - Step-by-step configurations  
-- Verification commands  
-- Troubleshooting  
+- Verification & troubleshooting  
 - Packet Tracer `.pkt` files  
-- Screenshots & notes  
+- Screenshots and technical notes  
 
 ---
 
-## 📁 Advanced Lab Index
+# 📁 Advanced Lab Index
 
-### **01 – DMZ Firewall Design**  
+### **DMZ Firewall Design**  
 `/advanced-networking/DMZ-Firewall-Design/`  
-A complete perimeter architecture using an external router, DMZ zone, internal LAN, NAT, static NAT, and ACL-based firewalling. Includes isolation rules preventing DMZ→LAN lateral movement.
+A full enterprise perimeter design including an external router, DMZ zone, internal LAN, NAT, static NAT, and ACL-based firewalling.
 
 ---
 
-### **02 – Enterprise VLAN Segmentation**  
+### **Enterprise VLAN Segmentation**  
 `/advanced-networking/Enterprise-VLAN-Segmentation/`  
-Multiple VLANs (Finance, HR, Guest, Admin, Servers) using router-on-a-stick or L3 SVIs, trunk links, inter-VLAN routing, and ACL enforcement between departments.
+Multiple VLANs (Finance, HR, Guest, Admin, Servers) with router-on-a-stick or L3 switch SVIs, inter-VLAN ACL rules, and trunk links.
 
 ---
 
-### **03 – OSPF Multi-Area Routing**  
+### **OSPF Multi-Area Routing**  
 `/advanced-networking/OSPF-MultiArea/`  
-Enterprise OSPF with backbone (Area 0), additional areas, stub/totally stubby design, route summarization, and prefix filtering.
+Backbone (Area 0) plus additional OSPF areas with summarization, stub/totally stubby area design, and prefix filtering.
 
 ---
 
-### **04 – Site-to-Site IPSec VPN Tunnel**  
+### **Site-to-Site IPSec VPN**  
 `/advanced-networking/Site-to-Site-VPN-IPSec/`  
-Simulate secure encrypted communication between two remote sites using ISAKMP Phase 1, IPSec Phase 2, transform sets, crypto ACLs, and tunnel verification commands.
+A complete IPSec configuration including ISAKMP Phase 1, Phase 2, transform sets, crypto ACLs, and tunnel verification.
 
 ---
 
-### **05 – L3 Core Switching & ACL Security**  
+### **L3 Core Switching & Server Segmentation**  
 `/advanced-networking/L3-Core-Switching/`  
-Design a routed enterprise core switch with SVIs, server farm segmentation, access-layer uplinks, and ACL boundary rules.
+Enterprise core switch design using routed SVIs, server farm segmentation, access layer uplinks, and ACL firewalling.
 
 ---
 
-### **06 – High Availability (HSRP)**  
+### **High Availability (HSRP)**  
 `/advanced-networking/High-Availability-HSRP/`  
-Implement redundant default gateways with HSRP (active/standby), priority tuning, preemption, and failover testing.
+Redundant gateway design using HSRP active/standby, priority tuning, preemption, and failover testing.
 
 ---
 
-### **07 – IDS / SPAN Monitoring Lab**  
+### **IDS / SPAN Monitoring Lab**  
 `/advanced-networking/IDS-SPAN-Monitoring/`  
-Configure SPAN (port mirroring), attach a sniffer host, capture attack/malicious traffic, analyze packets, and apply mitigation using ACLs.
+Configure SPAN (port mirroring), attach a sniffer host, capture attack traffic with Wireshark, and apply ACL mitigation.
 
 ---
 
-## 🧰 Tools Used
+# 🛠 Tools Used
 
 - Cisco Packet Tracer  
 - Cisco IOS CLI  
-- Optional: GNS3  
-- Wireshark (SPAN labs)  
-- Professional network diagrams  
+- Wireshark (SPAN/IDS labs)  
+- Optional: GNS3 for extended simulation  
 
 ---
 
-## 🎯 Purpose of This Section
+# 🎯 Purpose of This Section
 
-This directory exists to demonstrate **enterprise-level networking skills**, not just academic exercises.
+This directory exists to demonstrate **enterprise-level networking competency**, not classroom exercises.
 
-It shows you can:
+It shows the ability to:
 
-- build real multi-router networks  
-- secure boundaries using layered controls  
-- design functional DMZ and VLAN architectures  
-- configure enterprise routing protocols  
-- operate and defend networks at a professional level  
+- design multi-router architectures  
+- segment and secure networks  
+- implement VPN encryption  
+- build DMZ and perimeter defenses  
+- apply layered security controls  
+- operate and troubleshoot production-style networks  
 
-These labs elevate the portfolio from “student projects” to **real-world engineering and cyber operations readiness**.
+These labs elevate the portfolio to **professional engineering and cyber-operations readiness**.
