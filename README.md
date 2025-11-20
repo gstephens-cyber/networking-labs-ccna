@@ -7,16 +7,17 @@ This repo is actively expanding as I move through advanced networking specializa
 
 ---
 
-## 📁 Repository Structure
+## 📂 Repository Structure
 
+```text
 networking-labs/
 │
-├── Foundations/ # Core networking fundamentals
-│ ├── layer-2-security-lab/
-│ ├── layer-3-4-security-lab/
-│ ├── network-protocol-lab/
-│ ├── network-perimeter-lab/
-│ └── (basic routing, NAT, VLANs, DHCP, ACL labs)
+├── Foundations/               # Core networking fundamentals
+│   ├── layer-2-security-lab/
+│   ├── layer-3-4-security-lab/
+│   ├── network-protocol-lab/
+│   └── network-perimeter-lab/
+│      (basic routing, NAT, VLANs, DHCP, ACL labs)
 │
 ├── ACL-Extended/
 ├── ACL-Standard/
@@ -25,14 +26,14 @@ networking-labs/
 ├── static-routing/
 ├── vlan-intervlan-routing/
 │
-└── advanced-networking/ # (COMING NEXT)
-├── DMZ-Firewall-Design/
-├── Enterprise-VLAN-Segmentation/
-├── OSPF-MultiArea/
-├── Site-to-Site-VPN-IPSec/
-├── L3-Core-Switching/
-├── High-Availability-HSRP/
-└── IDS-SPAN-Monitoring/
+└── advanced-networking/       # COMING NEXT
+    ├── DMZ-Firewall-Design/
+    ├── Enterprise-VLAN-Segmentation/
+    ├── OSPF-MultiArea/
+    ├── Site-to-Site-VPN-IPSec/
+    ├── L3-Core-Switching/
+    ├── High-Availability-HSRP/
+    └── IDS-SPAN-Monitoring/
 
 
 ---
