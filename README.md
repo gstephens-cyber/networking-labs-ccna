@@ -34,8 +34,6 @@ networking-labs/
 ├── High-Availability-HSRP/
 └── IDS-SPAN-Monitoring/
 
-yaml
-Copy code
 
 ---
 
