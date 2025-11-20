@@ -1,19 +1,24 @@
-🚀 Networking Labs Portfolio
+# 🚀 Networking Labs Portfolio
 
-This repository contains my complete collection of hands-on network engineering and network security labs, covering everything from foundational routing/switching to advanced enterprise-grade architectures.
+This repository contains my complete collection of hands-on network engineering and network security labs, covering everything from foundational routing and switching to advanced enterprise-grade architectures.
+
 These labs demonstrate real technical capability — routing protocols, segmentation, ACLs, perimeter design, and secure connectivity across Cisco-based environments.
 
-This repo is actively expanding as I move through advanced networking specializations.
+This repo is actively expanding as I move through advanced networking and cybersecurity specializations.
 
-📂 Repository Structure
+---
+
+## 📂 Repository Structure
+
+```text
 networking-labs/
 │
-├── Foundations/               # Core networking fundamentals
+├── Foundations/
 │   ├── layer-2-security-lab/
 │   ├── layer-3-4-security-lab/
 │   ├── network-protocol-lab/
 │   └── network-perimeter-lab/
-│      (basic routing, NAT, VLANs, DHCP, ACL labs)
+│       (basic routing, NAT, VLANs, DHCP, ACL labs)
 │
 ├── ACL-Extended/
 ├── ACL-Standard/
@@ -22,7 +27,7 @@ networking-labs/
 ├── static-routing/
 ├── vlan-intervlan-routing/
 │
-└── advanced-networking/       # COMING NEXT
+└── advanced-networking/   # COMING NEXT
     ├── DMZ-Firewall-Design/
     ├── Enterprise-VLAN-Segmentation/
     ├── OSPF-MultiArea/
@@ -30,82 +35,55 @@ networking-labs/
     ├── L3-Core-Switching/
     ├── High-Availability-HSRP/
     └── IDS-SPAN-Monitoring/
-
-🎯 Purpose of This Repo
-
-This repository shows practical, real-world capability in:
+🎯 Purpose of This Repository
+This repo demonstrates hands-on, real-world networking and security engineering capability in:
 
 Routing and switching fundamentals
 
 VLANs, trunking, and inter-VLAN routing
 
-NAT, PAT, DHCP relay
+NAT, PAT, and DHCP relaying
 
-ACLs (standard, extended, stateful concepts)
+ACLs (standard and extended)
 
-Layer-2 and Layer-3 network security
+Layer-2 and Layer-3 network security concepts
 
-Perimeter network design and segmentation
+Enterprise perimeter architecture
 
-Multi-area OSPF deployment + optimization
+Multi-area OSPF routing design
 
-IPSec site-to-site VPN implementation
+Site-to-site VPN design (IPSec)
 
-HSRP redundancy and failover design
+Redundancy and high availability using HSRP
 
-IDS/SPAN monitoring and analysis
-
-Enterprise DMZ and firewall architecture (advanced labs)
-
-Each lab includes:
-
-Topology diagrams
-
-Configuration files (/configs)
-
-Screenshots (/screenshots)
-
-Verification commands
-
-Documentation (README.md)
+IDS/SPAN monitoring and attack traffic inspection
 
 🔥 Advanced Networking Track (In Progress)
-
-These labs represent full enterprise network engineering skill:
+These labs represent enterprise-level network architecture and security engineering.
 
 01 – DMZ Firewall Design
-
-Perimeter firewall, DMZ segmentation, NAT, inbound/outbound ACLs, and server isolation.
+Full enterprise DMZ with perimeter firewall, internal segmentation, static NAT, and ACL enforcement.
 
 02 – Enterprise VLAN Segmentation
-
-Finance, HR, Admin, Servers, Guest, and production segmentation with ACL-based boundaries.
+Finance, HR, Admin, Servers, and Guest VLANs with layer-3 routing and inter-VLAN ACL control.
 
 03 – OSPF Multi-Area
-
-Area 0 backbone, area separation, summarization, and stub/totally-stubby configurations.
+Area 0 backbone with additional OSPF areas, summarization, and route filtering.
 
 04 – Site-to-Site IPSec VPN
-
-ISAKMP Phase 1, Phase 2, transform sets, crypto ACLs, and tunnel verification.
+ISAKMP Phase 1/2, transform sets, crypto ACLs, and encrypted tunnel validation.
 
 05 – L3 Core Switching
-
-SVIs, routed switchports, inter-VLAN routing, server-farm segmentation, ACL policy enforcement.
+Routed core switch, SVIs, server segmentation, and ACL-based control.
 
 06 – High Availability (HSRP)
-
-Active/standby default gateway redundancy, preemption, and failover validation.
+Active/standby redundancy configuration with failover simulation and validation.
 
 07 – IDS/SPAN Monitoring
-
-SPAN port mirroring, traffic sniffing, malware pattern detection, and mitigation strategies.
-
-These advanced labs integrate directly with my cybersecurity projects (SOC lab, firewall design, IR).
+SPAN port monitoring, Wireshark capture, attack analysis, and mitigation techniques.
 
 🧪 Verification Commands
-
-Every lab includes validation like:
+Each lab includes verification such as:
 
 show ip route
 
@@ -123,34 +101,38 @@ show crypto isakmp sa
 
 show standby
 
-Packet captures (Wireshark)
+Wireshark packet capture analysis
 
-Connectivity tests (ping / traceroute)
+Ping / Traceroute connectivity validation
 
 🛠 Tools & Platforms
+Cisco Packet Tracer (Primary for current labs on macOS)
 
-Cisco Packet Tracer
-
-GNS3 / EVE-NG (advanced labs)
+GNS3 / EVE-NG (for advanced labs later on PC)
 
 Wireshark
 
-Linux/Windows endpoints (SPAN/IDS labs)
+Linux and Windows endpoints (SPAN / IDS)
 
-Firewall simulation (ASA/PFs conceptual alignment)
+Firewall simulation (ASA/PF conceptual alignment)
 
 📈 Status
+Section	Status
+Foundational Labs	✅ Complete
+Intermediate Labs	✅ Complete
+Advanced Labs	🏗️ In Progress
+Cybersecurity Integration	🔄 Ongoing
 
-Foundational Labs: Complete
+🎓 Additional Learning Track
+Alongside my networking labs, I am actively completing:
 
-Intermediate Labs: Complete
+IBM Cybersecurity Professional Certificate (Coursera)
 
-Advanced Labs: In progress
+Google Cybersecurity Professional Certificate (Coursera)
 
-Integration with cybersecurity portfolio: Ongoing
+This repo ties directly into my larger cybersecurity portfolio and hands-on SOC development.
 
 📞 Contact
-
 LinkedIn: https://www.linkedin.com/in/gregorystephens96
-
 GitHub: https://github.com/gstephens-cyber
+
