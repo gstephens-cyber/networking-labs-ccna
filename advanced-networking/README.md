@@ -3,20 +3,20 @@
 ## Overview
 
 This section contains **advanced Packet Tracer networking labs** focused on enterprise network design, segmentation, routing, and security.  
-These labs go beyond basic CCNA concepts and emphasize **real-world topology design, protocol behavior, and professional documentation**.
+These labs extend beyond core CCNA fundamentals and emphasize **real-world topology design, protocol behavior, troubleshooting, and professional documentation**.
 
-Each lab includes:
-- A defined objective
-- Structured topology and addressing
+Each completed lab includes:
+- A clearly defined objective
+- Structured topology and IP addressing
 - Step-by-step configuration
-- Verification and troubleshooting
+- Verification and troubleshooting evidence
 - Screenshots and a complete Packet Tracer lab file
 
-Where Packet Tracer imposes technical limitations, those constraints are **explicitly documented** rather than hidden.
+Where Cisco Packet Tracer imposes technical limitations, those constraints are **explicitly documented** rather than hidden.
 
 ---
 
-## Labs (In Implementation Order)
+## Completed Labs (In Implementation Order)
 
 ### DMZ Firewall Design
 
@@ -104,11 +104,27 @@ This lab is documented as a **design and configuration deliverable**, with CLI e
 
 ---
 
-## Skills Demonstrated Across These Labs
+## Upcoming Labs
+
+The following labs are planned to further expand enterprise networking and security coverage in this section:
+
+- High Availability Routing (HSRP / GLBP)
+- Advanced Inter-VLAN Routing with Layer 3 Switching
+- Zone-Based Firewall (ZBF)
+- WAN Routing and Route Redistribution
+- Advanced ACL Design and Optimization
+- QoS Fundamentals and Traffic Prioritization
+- Enterprise Network Troubleshooting Scenarios
+
+These labs will follow the same **structured, portfolio-ready format** used in the completed labs above.
+
+---
+
+## Skills Demonstrated Across This Section
 
 - Enterprise network segmentation
 - Firewall and DMZ design
-- VLAN implementation
+- VLAN implementation and switch configuration
 - Multi-area OSPF routing
 - VPN design methodology
 - Protocol verification and troubleshooting
@@ -118,5 +134,5 @@ This lab is documented as a **design and configuration deliverable**, with CLI e
 
 ## Notes
 
-These labs prioritize **correct design, configuration methodology, and verification** over simulated “success states.”  
+These labs prioritize **correct architecture, configuration methodology, and verification** over simulated “success states.”  
 All configurations reflect how these technologies behave on real Cisco devices, with limitations clearly identified where Packet Tracer falls short.
