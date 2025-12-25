@@ -1,84 +1,61 @@
-# Advanced Networking Labs
+# Advanced Networking
 
-This section contains advanced, enterprise-focused networking labs designed to demonstrate real-world routing, switching, and network security concepts.  
-Each lab is fully documented with configuration evidence, verification outputs, and professional technical write-ups suitable for academic review and portfolio presentation.
-
-All labs are built and validated using **Cisco Packet Tracer**, following industry best practices for hierarchical design, security, and troubleshooting.
+Enterprise-grade Packet Tracer labs focused on real-world routing, switching, segmentation, and network security.  
+Each lab includes a dedicated folder, a clean `README.md`, and a `Screenshots/` evidence trail for verification.
 
 ---
 
-## Completed Labs
+## ✅ Completed Labs
+
+### DMZ Firewall Design
+Design and implementation of a DMZ-style perimeter architecture with clear trust zones and controlled traffic flow.
+
+- **Lab:** [DMZ-Firewall-Design](./DMZ-Firewall-Design/)
+
+---
+
+### Enterprise VLAN Segmentation
+Enterprise VLAN design with segmentation, trunking, and verification evidence captured end-to-end.
+
+- **Lab:** [Enterprise-VLAN-Segmentation](./Enterprise-VLAN-Segmentation/)
+
+---
 
 ### OSPF Multi-Area Routing
-**Status:** Completed and verified
+Hierarchical OSPF design using **Area 0 backbone** with multiple non-backbone areas, ABRs, verification of neighbors, inter-area routes, and end-to-end reachability.
 
-This lab demonstrates the design and implementation of a hierarchical OSPF network using multiple areas.  
-It includes an Area 0 backbone, multiple non-backbone areas, Area Border Routers (ABRs), and full inter-area route verification.
-
-**Concepts demonstrated:**
-- OSPF backbone and non-backbone areas
-- Area Border Router (ABR) design
-- Passive-interface best practices
-- Inter-area route propagation
-- OSPF neighbor and routing table verification
-
-**Lab files:**  
-- [OSPF Multi-Area Routing](./ospf-multi-area-routing/)
+- **Lab:** [ospf-multi-area-routing](./ospf-multi-area-routing/)
 
 ---
 
-## In Progress Labs
+## 🟡 In Progress
 
 ### Site-to-Site IPSec VPN
-**Status:** In progress
+Site-to-site VPN between two networks across an untrusted WAN using IKE Phase 1/2, crypto maps, and encryption verification.
 
-This lab demonstrates a secure site-to-site IPSec VPN between two remote networks across an untrusted WAN.  
-It focuses on encrypted inter-site communication using IKE Phase 1 and Phase 2, crypto maps, and traffic verification.
-
-**Planned concepts:**
-- Site-to-site IPSec VPN design
-- ISAKMP (IKE Phase 1) configuration
-- IPSec transform sets (Phase 2)
-- Crypto map application
-- Encrypted traffic verification
-
-**Lab files:**  
-- [Site-to-Site IPSec VPN](./site-to-site-ipsec-vpn/)
+- **Lab:** [site-to-site-ipsec-vpn](./site-to-site-ipsec-vpn/)
 
 ---
 
-## Planned Labs
+## 🔜 Planned (Next Up)
+These are queued after IPSec VPN to expand enterprise routing + security coverage:
 
-The following labs are planned to further expand enterprise networking and security coverage:
-
-- Advanced NAT & PAT
-- OSPF Route Redistribution
-- BGP Fundamentals
-- Secure DMZ Architecture
-- Inter-VLAN Routing with ACL Enforcement
-- High Availability (HSRP / VRRP)
+- OSPF Route Summarization & Optimization
+- OSPF Route Redistribution (Static / Connected)
+- NAT/PAT + ACL enforcement
+- HSRP (High Availability)
+- Basic BGP Fundamentals (edge routing)
 
 ---
 
-## Tools & Environment
-- Cisco Packet Tracer
-- CLI-based router and switch configuration
-- Structured IP addressing
-- Professional troubleshooting methodology
+## Documentation Standard (Locked)
+Each lab folder follows this structure:
 
----
-
-## Documentation Standard
-Each lab includes:
-- A dedicated folder per lab
-- A fully formatted `README.md`
-- Step-by-step configuration screenshots
-- Verification and validation outputs
-- Clear separation between design, configuration, and proof
-
-This structure ensures consistency, readability, and long-term maintainability across all labs.
+- `README.md` (formatted, paste-ready, GitHub-rendered cleanly)
+- `Screenshots/` (evidence trail using `01_`, `02_` naming)
+- `.pkt` file at the lab root when applicable
 
 ---
 
 ## Status
-Active development — labs are added and verified continuously.
+Active development — labs are added, verified, and published continuously.
