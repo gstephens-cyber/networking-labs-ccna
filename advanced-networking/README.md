@@ -1,61 +1,109 @@
-# Advanced Networking
+# Advanced Networking Labs
 
-Enterprise-grade Packet Tracer labs focused on real-world routing, switching, segmentation, and network security.  
-Each lab includes a dedicated folder, a clean `README.md`, and a `Screenshots/` evidence trail for verification.
+## Overview
+
+This section contains **advanced networking labs** designed to demonstrate enterprise-level routing, security, and infrastructure concepts beyond basic CCNA fundamentals.  
+
+Each lab is built with a focus on:
+- Real-world network design
+- Correct protocol behavior
+- Structured troubleshooting
+- Professional documentation suitable for a public technical portfolio
+
+All labs are implemented using **Cisco Packet Tracer**, with explicit documentation where simulator limitations affect full feature implementation.
+
+---
+
+## Lab Objectives
+
+The Advanced Networking labs emphasize:
+
+- Multi-area routing design and verification
+- Firewall and security architecture
+- VPN design methodology
+- Enterprise addressing and segmentation
+- Protocol validation using industry-standard CLI commands
+- Clear, reproducible technical documentation
+
+Where full protocol operation is not possible due to tool constraints, labs are documented as **design and configuration deliverables**, reflecting real-world engineering workflows.
 
 ---
 
-## ✅ Completed Labs
-
-### DMZ Firewall Design
-Design and implementation of a DMZ-style perimeter architecture with clear trust zones and controlled traffic flow.
-
-- **Lab:** [DMZ-Firewall-Design](./DMZ-Firewall-Design/)
-
----
-
-### Enterprise VLAN Segmentation
-Enterprise VLAN design with segmentation, trunking, and verification evidence captured end-to-end.
-
-- **Lab:** [Enterprise-VLAN-Segmentation](./Enterprise-VLAN-Segmentation/)
-
----
+## Labs Included
 
 ### OSPF Multi-Area Routing
-Hierarchical OSPF design using **Area 0 backbone** with multiple non-backbone areas, ABRs, verification of neighbors, inter-area routes, and end-to-end reachability.
 
-- **Lab:** [ospf-multi-area-routing](./ospf-multi-area-routing/)
+**Objective:**  
+Design and implement a multi-area OSPF network with a backbone area and multiple non-backbone areas, demonstrating proper ABR behavior and inter-area route propagation.
 
----
+**Key Concepts:**
+- OSPF backbone (Area 0) design
+- Area Border Routers (ABRs)
+- Inter-area routing (O IA routes)
+- Structured IP addressing
+- OSPF neighbor and route verification
+- Enterprise-grade troubleshooting methodology
 
-## 🟡 In Progress
+📁 **Lab Files:**  
+`advanced-networking/ospf-multi-area-routing/`
 
-### Site-to-Site IPSec VPN
-Site-to-site VPN between two networks across an untrusted WAN using IKE Phase 1/2, crypto maps, and encryption verification.
-
-- **Lab:** [site-to-site-ipsec-vpn](./site-to-site-ipsec-vpn/)
-
----
-
-## 🔜 Planned (Next Up)
-These are queued after IPSec VPN to expand enterprise routing + security coverage:
-
-- OSPF Route Summarization & Optimization
-- OSPF Route Redistribution (Static / Connected)
-- NAT/PAT + ACL enforcement
-- HSRP (High Availability)
-- Basic BGP Fundamentals (edge routing)
+🔗 **Lab Documentation:**  
+[View Lab →](./ospf-multi-area-routing)
 
 ---
 
-## Documentation Standard (Locked)
-Each lab folder follows this structure:
+### Site-to-Site IPsec VPN (ASA-Based)
 
-- `README.md` (formatted, paste-ready, GitHub-rendered cleanly)
-- `Screenshots/` (evidence trail using `01_`, `02_` naming)
-- `.pkt` file at the lab root when applicable
+**Objective:**  
+Design and configure a site-to-site IPsec VPN connecting a Headquarters (HQ) LAN and a Branch LAN across an untrusted network using Cisco ASA firewalls.
+
+**Key Concepts:**
+- IPsec VPN architecture
+- IKEv1 Phase 1 configuration
+- IPsec Phase 2 (transform sets and crypto maps)
+- Crypto ACLs (interesting traffic)
+- ASA firewall interface and security-level design
+- Real-world troubleshooting and constraint documentation
+
+**Notes:**  
+Cisco Packet Tracer’s ASA implementation does not support NAT functionality required for IPsec NAT exemption. As a result, Security Associations (SAs) cannot form despite correct Phase 1 and Phase 2 configuration.  
+
+This lab is therefore presented as a **design and configuration deliverable**, with explicit evidence of simulator limitations and expected real-device behavior.
+
+📁 **Lab Files:**  
+`advanced-networking/site-to-site-ipsec-vpn/`
+
+🔗 **Lab Documentation:**  
+[View Lab →](./site-to-site-ipsec-vpn)
 
 ---
 
-## Status
-Active development — labs are added, verified, and published continuously.
+## Tooling and Constraints
+
+All labs in this section are built using **Cisco Packet Tracer**.  
+Where Packet Tracer does not fully implement enterprise features (such as ASA NAT behavior for IPsec), limitations are:
+
+- Explicitly identified
+- Technically justified
+- Documented with CLI evidence
+
+This approach mirrors real-world engineering practice, where tooling constraints must be recognized and communicated clearly.
+
+---
+
+## Skills Demonstrated Across This Section
+
+- Enterprise routing design
+- Advanced OSPF configuration and validation
+- Firewall interface and security-level modeling
+- VPN design methodology
+- Protocol troubleshooting and verification
+- Technical documentation and portfolio presentation
+- Clear communication of design constraints and assumptions
+
+---
+
+## Notes
+
+These labs prioritize **correct architecture and methodology** over simulated “success states.”  
+All configurations and verification steps reflect how the technologies behave on real Cisco devices, even when full simulation is not possible.
