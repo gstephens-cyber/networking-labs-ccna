@@ -2,52 +2,78 @@
 
 ## Overview
 
-This section contains **advanced networking labs** designed to demonstrate enterprise-level routing, security, and infrastructure concepts beyond basic CCNA fundamentals.  
+This section contains **advanced Packet Tracer networking labs** focused on enterprise network design, segmentation, routing, and security.  
+These labs go beyond basic CCNA concepts and emphasize **real-world topology design, protocol behavior, and professional documentation**.
 
-Each lab is built with a focus on:
-- Real-world network design
-- Correct protocol behavior
-- Structured troubleshooting
-- Professional documentation suitable for a public technical portfolio
+Each lab includes:
+- A defined objective
+- Structured topology and addressing
+- Step-by-step configuration
+- Verification and troubleshooting
+- Screenshots and a complete Packet Tracer lab file
 
-All labs are implemented using **Cisco Packet Tracer**, with explicit documentation where simulator limitations affect full feature implementation.
-
----
-
-## Lab Objectives
-
-The Advanced Networking labs emphasize:
-
-- Multi-area routing design and verification
-- Firewall and security architecture
-- VPN design methodology
-- Enterprise addressing and segmentation
-- Protocol validation using industry-standard CLI commands
-- Clear, reproducible technical documentation
-
-Where full protocol operation is not possible due to tool constraints, labs are documented as **design and configuration deliverables**, reflecting real-world engineering workflows.
+Where Packet Tracer imposes technical limitations, those constraints are **explicitly documented** rather than hidden.
 
 ---
 
-## Labs Included
+## Labs (In Implementation Order)
+
+### DMZ Firewall Design
+
+**Objective:**  
+Design and implement a DMZ architecture that separates public-facing services from the internal network using firewall security zones.
+
+**Key Concepts:**
+- DMZ topology and traffic flow
+- Firewall inside / outside / DMZ segmentation
+- Access control enforcement
+- NAT concepts for public services
+- Enterprise security zoning
+
+📁 **Lab Folder:**  
+`advanced-networking/DMZ-Firewall-Design/`
+
+🔗 **Documentation:**  
+[View Lab →](./DMZ-Firewall-Design)
+
+---
+
+### Enterprise VLAN Segmentation
+
+**Objective:**  
+Implement enterprise VLAN segmentation to logically separate network traffic and improve security and manageability.
+
+**Key Concepts:**
+- VLAN creation and naming
+- Access vs trunk ports
+- Layer 2 segmentation
+- Inter-VLAN traffic considerations
+- Structured switch configuration
+
+📁 **Lab Folder:**  
+`advanced-networking/Enterprise-VLAN-Segmentation/`
+
+🔗 **Documentation:**  
+[View Lab →](./Enterprise-VLAN-Segmentation)
+
+---
 
 ### OSPF Multi-Area Routing
 
 **Objective:**  
-Design and implement a multi-area OSPF network with a backbone area and multiple non-backbone areas, demonstrating proper ABR behavior and inter-area route propagation.
+Design and configure a multi-area OSPF network with a backbone area and multiple non-backbone areas, demonstrating proper ABR behavior and inter-area routing.
 
 **Key Concepts:**
-- OSPF backbone (Area 0) design
+- OSPF Area 0 backbone design
 - Area Border Routers (ABRs)
-- Inter-area routing (O IA routes)
-- Structured IP addressing
-- OSPF neighbor and route verification
-- Enterprise-grade troubleshooting methodology
+- Inter-area route propagation (O IA)
+- OSPF neighbor formation
+- Routing table verification
 
-📁 **Lab Files:**  
+📁 **Lab Folder:**  
 `advanced-networking/ospf-multi-area-routing/`
 
-🔗 **Lab Documentation:**  
+🔗 **Documentation:**  
 [View Lab →](./ospf-multi-area-routing)
 
 ---
@@ -58,52 +84,39 @@ Design and implement a multi-area OSPF network with a backbone area and multiple
 Design and configure a site-to-site IPsec VPN connecting a Headquarters (HQ) LAN and a Branch LAN across an untrusted network using Cisco ASA firewalls.
 
 **Key Concepts:**
-- IPsec VPN architecture
+- IPsec site-to-site architecture
 - IKEv1 Phase 1 configuration
 - IPsec Phase 2 (transform sets and crypto maps)
 - Crypto ACLs (interesting traffic)
-- ASA firewall interface and security-level design
-- Real-world troubleshooting and constraint documentation
+- ASA interface and security-level design
 
 **Notes:**  
-Cisco Packet Tracer’s ASA implementation does not support NAT functionality required for IPsec NAT exemption. As a result, Security Associations (SAs) cannot form despite correct Phase 1 and Phase 2 configuration.  
+Cisco Packet Tracer’s ASA implementation does **not support NAT functionality**, which is required for IPsec NAT exemption.  
+As a result, Security Associations (SAs) cannot form despite correct Phase 1 and Phase 2 configuration.
 
-This lab is therefore presented as a **design and configuration deliverable**, with explicit evidence of simulator limitations and expected real-device behavior.
+This lab is documented as a **design and configuration deliverable**, with CLI evidence of simulator limitations.
 
-📁 **Lab Files:**  
+📁 **Lab Folder:**  
 `advanced-networking/site-to-site-ipsec-vpn/`
 
-🔗 **Lab Documentation:**  
+🔗 **Documentation:**  
 [View Lab →](./site-to-site-ipsec-vpn)
 
 ---
 
-## Tooling and Constraints
+## Skills Demonstrated Across These Labs
 
-All labs in this section are built using **Cisco Packet Tracer**.  
-Where Packet Tracer does not fully implement enterprise features (such as ASA NAT behavior for IPsec), limitations are:
-
-- Explicitly identified
-- Technically justified
-- Documented with CLI evidence
-
-This approach mirrors real-world engineering practice, where tooling constraints must be recognized and communicated clearly.
-
----
-
-## Skills Demonstrated Across This Section
-
-- Enterprise routing design
-- Advanced OSPF configuration and validation
-- Firewall interface and security-level modeling
+- Enterprise network segmentation
+- Firewall and DMZ design
+- VLAN implementation
+- Multi-area OSPF routing
 - VPN design methodology
-- Protocol troubleshooting and verification
-- Technical documentation and portfolio presentation
-- Clear communication of design constraints and assumptions
+- Protocol verification and troubleshooting
+- Professional technical documentation
 
 ---
 
 ## Notes
 
-These labs prioritize **correct architecture and methodology** over simulated “success states.”  
-All configurations and verification steps reflect how the technologies behave on real Cisco devices, even when full simulation is not possible.
+These labs prioritize **correct design, configuration methodology, and verification** over simulated “success states.”  
+All configurations reflect how these technologies behave on real Cisco devices, with limitations clearly identified where Packet Tracer falls short.
